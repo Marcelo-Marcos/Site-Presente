@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cor-fundo: #f5f5f5;
+  --cor-fundo-cabecalho: #B71F1E;
+  --cor-fundo-rodape: #B71F1E;
+  --cor-fonte: #B71F1E;
+  --cor-borda-imagem: #000000;
+  --tamanho-fonte-titulo: 3rem;
+  --tamanho-fonte-texto: 1.5rem;
+  --fonte-pagina: "Dancing Script", cursive;
+  --margem-documento: 5%
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-fonte);
+}
+
+.cabecalho {
+  background-color: var(--cor-fundo-cabecalho);
+  padding: 3%;
+}
+
+.cabecalho__link {
+  display: flex;
+  margin: 1% 0 0 20%;
+  align-items: start;
+  gap: 5%;
+}
+
+.cabecalho__navega {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+.titulo__imagem {
+  display: flex;
+  align-items: center;
+  margin: var(--margem-documento);
+  gap: 10%
+}
+
+.titulo__imagem__titulo {
+  font-size: var(--tamanho-fonte-titulo);
+  font-family: var(--fonte-pagina);
+  text-align: center;
+  margin-left: 5%;
+}
+
+.titulo__imagem__caixa {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 2% 5% 0 0;
+}
+
+.titulo__imagem__foto {
+  width: 100%;
+  border: solid 2px;
+  border-color: var(--cor-borda-imagem);
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: var(--margem-documento);
+}
+
+.principal__titulo {
+  font-size: var(--tamanho-fonte-titulo);
+  font-family: var(--fonte-pagina);
+  margin: 5% 0 3% 0;
+  text-align: center;
+}
+
+.principa__texto {
+  font-size: var(--tamanho-fonte-texto);
+  font-family: var(--fonte-pagina);
+  text-align: center;
+  margin-right: 0 3%;
+}
+
+.fotos__titulo {
+  font-size: var(--tamanho-fonte-titulo);
+  font-family: var(--fonte-pagina);
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.fotos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4%;
+  margin: 0 5% 0 6%;
+}
+
+.fotos__imagem__caixa {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  margin-bottom: 5%;
+}
+
+.fotos__imagem {
+  width: 100%;
+  height: 100%;
+  border: solid 2px;
+  border-color: var(--cor-borda-imagem);
+}
+
+.rodape {
+  background-color: var(--cor-fundo-rodape);
+  padding: 5%;
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .cabecalho__link {
+    margin: 1% 0 0 2%;
+  }
+
+  .titulo__imagem {
+    flex-direction: column;
+    margin-top: 5%;
+  }
+
+  .titulo__imagem__caixa {
+    width: 50%;
+    margin-top: 5%;
+  }
+
+  .titulo__imagem__foto {
+    border: solid 1px;
+    border-color: var(--cor-borda-imagem);
+  }
+
+  .principa__texto {
+    text-align: justify;
+  }
+
+  .fotos {
+    gap: 2%;
+    margin: 0 3% 0 5%;
+  }
+
+  .fotos__imagem__caixa {
+    margin-bottom: 2%;
+  }
+
+  .fotos__imagem {
+    border: solid 1px;
+    border-color: var(--cor-borda-imagem);
+  }
+}
