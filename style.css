@@ -26,6 +26,10 @@ body {
 .cabecalho {
   background-color: var(--cor-fundo-cabecalho);
   padding: 3%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
 }
 
 .cabecalho__link {
@@ -44,7 +48,8 @@ body {
   display: flex;
   align-items: center;
   margin: var(--margem-documento);
-  gap: 10%
+  gap: 10%;
+  margin-top: 10%;
 }
 
 .titulo__imagem__titulo {
@@ -128,7 +133,7 @@ body {
 
   .titulo__imagem {
     flex-direction: column;
-    margin-top: 5%;
+    margin-top: 15%;
   }
 
   .titulo__imagem__caixa {
